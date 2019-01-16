@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "module": "commonjs",
+      "types": ["node", "webdriverio", "mocha"],
+      "moduleResolution": "node",
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "removeComments": true,
+      "noImplicitAny": false,
+      "baseUrl": ".",
+      "paths": {
+              "*": [ "./*" ],
+              "src/*": ["./src/*"]
+          }
+      },
+      "exclude": [
+        "node_modules"
+      ],
+      "include": [
+          "./**/*.ts"
+      ]
+  }
