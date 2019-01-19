@@ -8,13 +8,13 @@
   },
   "devDependencies": {
     "@types/chai": "^4.1.7",
-    "@types/lodash": "^4.14.119",
+    "@types/lodash": "^4.14.120",
     "@types/mocha": "^5.2.5",
     "@types/node": "^10.12.18",
-    "@wdio/cli": "^5.1.2",
+    "@wdio/cli": "^5.3.5",
     "@wdio/devtools-service": "^5.2.2",
     "@wdio/dot-reporter": "^5.2.3",
-    "@wdio/local-runner": "^5.1.1",
+    "@wdio/local-runner": "^5.3.5",
     "@wdio/mocha-framework": "^5.1.0",
     "@wdio/spec-reporter": "^5.1.0",
     "@wdio/sync": "^5.1.0",
@@ -23,14 +23,15 @@
     "rimraf": "^2.5.4",
     "ts-node": "^7.0.1",
     "tsconfig-paths": "^3.7.0",
-    "typescript": "^3.2.2",
-    "webdriverio": "^5.2.4"
+    "typescript": "^3.2.4",
+    "webdriverio": "^5.3.5"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "install": "^0.12.1",
     "lodash": "^4.17.11",
-    "npm": "^6.5.0"
+    "npm": "^6.6.0",
+    "package.json": "^2.0.1"
   }
 }

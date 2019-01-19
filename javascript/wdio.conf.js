@@ -14,6 +14,9 @@ exports.config = {
     // WebdriverIO allows it to run your tests in arbitrary locations (e.g. locally or
     // on a remote machine).
     // runner: 'local',
+    hostname: '0.0.0.0',
+    port: 4444,
+    path: '/wd/hub',
     
     //
     // ==================
@@ -24,10 +27,13 @@ exports.config = {
     // NPM script (see https://docs.npmjs.com/cli/run-script) then the current working
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
-    path: '/',
+    // path: '/',
     specs: [
         './specs/**/*.ts'
     ],
+    suites: {
+        ddg: ['./specs/homepage.spec.ts']
+    },
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
@@ -69,7 +75,7 @@ exports.config = {
     // Define all options that are relevant for the WebdriverIO instance here
     //
     // Level of logging verbosity: trace | debug | info | warn | error
-    logLevel: 'info',
+    logLevel: 'debug',
     outputDir: 'logging',
     //
     // Warns when a deprecated command is used
